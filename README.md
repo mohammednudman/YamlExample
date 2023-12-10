@@ -8,4 +8,4 @@ cmake ..
 cmake --build .
 ```
 ## Download CMAKE from here.
-(CMAKE)[https://cmake.org]
+[CMAKE](https://cmake.org)
