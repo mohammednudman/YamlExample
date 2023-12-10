@@ -6,6 +6,8 @@ add_subdirectory(third-party/yaml-cpp)
 add_executable(
         yaml-example
         main.cpp
+        main.h
+        main.h
 )
 
 target_link_libraries(
