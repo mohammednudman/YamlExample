@@ -1,4 +1,5 @@
-#pragma once
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <string>
 #include <vector>
@@ -17,15 +18,18 @@ public:
 
 class EmployeeBonusCalculator {
 public:
-    EmployeeBonusCalculator(const std::filesystem::path& csvFilePath, const std::string& yamlFilePath);
+    EmployeeBonusCalculator(const std::filesystem::path &csvFilePath, const std::string &yamlFilePath);
 
     void calculateAndPrintBonuses();
 
     static auto
-    calculateLoyaltyBonus(const std::tm &joining_date, const std::tm &current_date, const YAML::Node &bonus_ranges) -> int;
+    calculateLoyaltyBonus(const std::tm &joining_date, const std::tm &current_date,
+                          const YAML::Node &bonus_ranges) -> int;
 
 private:
     std::filesystem::path csvFilePath_;
     std::string yamlFilePath_;
 
 };
+
+#endif // MAIN_H

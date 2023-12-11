@@ -11,6 +11,31 @@
 -- Check for working CXX compiler: C:/MinGW/bin/g++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Configuring done (5.4s)
+CMake Deprecation Warning at cmake-build-debug/_deps/googletest-src/CMakeLists.txt:4 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at cmake-build-debug/_deps/googletest-src/googlemock/CMakeLists.txt:45 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at cmake-build-debug/_deps/googletest-src/googletest/CMakeLists.txt:56 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- Found Python: C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0/python3.11.exe (found version "3.11.5") found components: Interpreter 
+-- Configuring done (21.3s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug

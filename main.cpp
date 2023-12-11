@@ -4,6 +4,7 @@
 #include <sstream>
 #include <ctime>
 #include <iomanip>
+#include <yaml-cpp/yaml.h>
 
 Employee::Employee(const std::string &csvLine) {
     std::istringstream iss(csvLine);
@@ -23,7 +24,8 @@ Employee::Employee(const std::string &csvLine) {
         throw std::runtime_error("Error: Failed to convert joining date.");
 }
 
-EmployeeBonusCalculator::EmployeeBonusCalculator(const std::filesystem::path& csvFilePath, const std::string& yamlFilePath)
+EmployeeBonusCalculator::EmployeeBonusCalculator(const std::filesystem::path &csvFilePath,
+                                                 const std::string &yamlFilePath)
         : csvFilePath_(csvFilePath), yamlFilePath_(yamlFilePath) {}
 
 void EmployeeBonusCalculator::calculateAndPrintBonuses() {
@@ -59,7 +61,8 @@ void EmployeeBonusCalculator::calculateAndPrintBonuses() {
     }
 }
 
-auto EmployeeBonusCalculator::calculateLoyaltyBonus(const std::tm &joining_date, const std::tm &current_date, const YAML::Node &bonus_ranges) -> int {
+auto EmployeeBonusCalculator::calculateLoyaltyBonus(const std::tm &joining_date, const std::tm &current_date,
+                                                    const YAML::Node &bonus_ranges) -> int {
     int years_worked = current_date.tm_year - joining_date.tm_year;
 
     int bonus = 0;
