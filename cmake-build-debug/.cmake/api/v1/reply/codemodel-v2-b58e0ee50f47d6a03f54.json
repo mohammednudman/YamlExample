@@ -1,0 +1,561 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						3,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						38
+					]
+				},
+				{
+					"build" : "third-party/yaml-cpp",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-third-party.yaml-cpp-Debug-26823dc68722f44299bb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "third-party/yaml-cpp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						33,
+						34
+					]
+				},
+				{
+					"build" : "third-party/yaml-cpp/util",
+					"jsonFile" : "directory-third-party.yaml-cpp.util-Debug-afe1f35498391aefb308.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "third-party/yaml-cpp/util",
+					"targetIndexes" : 
+					[
+						35,
+						36,
+						37
+					]
+				},
+				{
+					"build" : "third-party/googletest",
+					"childIndexes" : 
+					[
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-third-party.googletest-Debug-a7cee6e6055ddb25a3a5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "third-party/googletest"
+				},
+				{
+					"build" : "third-party/googletest/googlemock",
+					"childIndexes" : 
+					[
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-third-party.googletest.googlemock-Debug-086f267e903c46f52cce.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 3,
+					"source" : "third-party/googletest/googlemock",
+					"targetIndexes" : 
+					[
+						29,
+						30
+					]
+				},
+				{
+					"build" : "third-party/googletest/googletest",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-third-party.googletest.googletest-Debug-220dba83749c889d8e07.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 4,
+					"source" : "third-party/googletest/googletest",
+					"targetIndexes" : 
+					[
+						31,
+						32
+					]
+				},
+				{
+					"build" : "tests",
+					"jsonFile" : "directory-tests-Debug-70e4927a02b591d5c1f8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests",
+					"targetIndexes" : 
+					[
+						9
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						6
+					],
+					"name" : "YamlExample",
+					"targetIndexes" : 
+					[
+						9,
+						38
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2
+					],
+					"name" : "YAML_CPP",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						33,
+						34,
+						35,
+						36,
+						37
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "googletest-distribution",
+					"parentIndex" : 0
+				},
+				{
+					"childIndexes" : 
+					[
+						4
+					],
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "gmock",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						29,
+						30
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "gtest",
+					"parentIndex" : 3,
+					"targetIndexes" : 
+					[
+						31,
+						32
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "Continuous::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-Continuous-Debug-d937f6f777544d1da666.json",
+					"name" : "Continuous",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousBuild::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-ContinuousBuild-Debug-5fc3ae17b0925c85bc97.json",
+					"name" : "ContinuousBuild",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousConfigure::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-ContinuousConfigure-Debug-85fb4db1c2d1465e8bb4.json",
+					"name" : "ContinuousConfigure",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousCoverage::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-ContinuousCoverage-Debug-14d0afac46814c845041.json",
+					"name" : "ContinuousCoverage",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousMemCheck::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-ContinuousMemCheck-Debug-5276707420ef1c2e9718.json",
+					"name" : "ContinuousMemCheck",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousStart::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-ContinuousStart-Debug-b4ceced837196aef00bc.json",
+					"name" : "ContinuousStart",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousSubmit::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-ContinuousSubmit-Debug-8900e6913f7ced58e8c7.json",
+					"name" : "ContinuousSubmit",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousTest::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-ContinuousTest-Debug-3f0c215bf6c6acd23e61.json",
+					"name" : "ContinuousTest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousUpdate::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-ContinuousUpdate-Debug-1a6e1f7ece2502b88c21.json",
+					"name" : "ContinuousUpdate",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ExampleTests::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-ExampleTests-Debug-5a4c9d3263915441d039.json",
+					"name" : "ExampleTests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Experimental::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-Experimental-Debug-3a8a5bbae9015124b56d.json",
+					"name" : "Experimental",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalBuild::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-ExperimentalBuild-Debug-4e3ac0d1764c6e355409.json",
+					"name" : "ExperimentalBuild",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalConfigure::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-ExperimentalConfigure-Debug-c9b0d299353399099025.json",
+					"name" : "ExperimentalConfigure",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalCoverage::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-ExperimentalCoverage-Debug-9dcd675000b1c7e89077.json",
+					"name" : "ExperimentalCoverage",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalMemCheck::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-ExperimentalMemCheck-Debug-acca466c8a78e9fe0555.json",
+					"name" : "ExperimentalMemCheck",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalStart::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-ExperimentalStart-Debug-1a0b41b0558f6fc89623.json",
+					"name" : "ExperimentalStart",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalSubmit::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-ExperimentalSubmit-Debug-3a98644e80f24c28acf7.json",
+					"name" : "ExperimentalSubmit",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalTest::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-ExperimentalTest-Debug-c847925fb0749dbd2ec5.json",
+					"name" : "ExperimentalTest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalUpdate::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-ExperimentalUpdate-Debug-89d9a8f736f4e493b225.json",
+					"name" : "ExperimentalUpdate",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Nightly::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-Nightly-Debug-7aee5f6f5321e3e26e77.json",
+					"name" : "Nightly",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyBuild::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-NightlyBuild-Debug-f69193d5f1e676b38e1f.json",
+					"name" : "NightlyBuild",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyConfigure::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-NightlyConfigure-Debug-37d3047168d2f0d701ce.json",
+					"name" : "NightlyConfigure",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyCoverage::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-NightlyCoverage-Debug-1a1ec9b38f118f5fb9ee.json",
+					"name" : "NightlyCoverage",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyMemCheck::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-NightlyMemCheck-Debug-572366f31385f87a8f36.json",
+					"name" : "NightlyMemCheck",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyMemoryCheck::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-NightlyMemoryCheck-Debug-4f3718979d6d8ec3af57.json",
+					"name" : "NightlyMemoryCheck",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyStart::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-NightlyStart-Debug-67a404c245ad3ca4d161.json",
+					"name" : "NightlyStart",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlySubmit::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-NightlySubmit-Debug-6ab78eaffa1da3aec997.json",
+					"name" : "NightlySubmit",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyTest::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-NightlyTest-Debug-0b0ae09bd8b52568deec.json",
+					"name" : "NightlyTest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyUpdate::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-NightlyUpdate-Debug-1fef4fe29e3b780f2110.json",
+					"name" : "NightlyUpdate",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gmock::@14d931f991af249dfd31",
+					"jsonFile" : "target-gmock-Debug-f31af9d6c6b45b3de823.json",
+					"name" : "gmock",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gmock_main::@14d931f991af249dfd31",
+					"jsonFile" : "target-gmock_main-Debug-9b5f986732ab2d76df82.json",
+					"name" : "gmock_main",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "gtest::@f24d190e63f09892ba9c",
+					"jsonFile" : "target-gtest-Debug-56f89f46e859bb30cd27.json",
+					"name" : "gtest",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "gtest_main::@f24d190e63f09892ba9c",
+					"jsonFile" : "target-gtest_main-Debug-c5057dcb09885b419a99.json",
+					"name" : "gtest_main",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "uninstall::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-uninstall-Debug-dbc2feae94e2e0af5cbd.json",
+					"name" : "uninstall",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "yaml-cpp::@940b6f9f5eda2ab88205",
+					"jsonFile" : "target-yaml-cpp-Debug-13a837a58a0669df7a95.json",
+					"name" : "yaml-cpp",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "yaml-cpp-parse::@66d7fa538dcc696a2557",
+					"jsonFile" : "target-yaml-cpp-parse-Debug-a189a4b6e748abd0c529.json",
+					"name" : "yaml-cpp-parse",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "yaml-cpp-read::@66d7fa538dcc696a2557",
+					"jsonFile" : "target-yaml-cpp-read-Debug-adeffc1e12650242e7c4.json",
+					"name" : "yaml-cpp-read",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "yaml-cpp-sandbox::@66d7fa538dcc696a2557",
+					"jsonFile" : "target-yaml-cpp-sandbox-Debug-61dc34259f9888b46445.json",
+					"name" : "yaml-cpp-sandbox",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "yaml-example::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-yaml-example-Debug-9ba2c9d7912ac1cf19ef.json",
+					"name" : "yaml-example",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug",
+		"source" : "C:/Users/Mohammed/CLionProjects/untitled"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

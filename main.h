@@ -23,9 +23,10 @@ public:
 
     void calculateAndPrintBonuses();
 
-private:
     static auto
     calculateLoyaltyBonus(const std::tm &joining_date, const std::tm &current_date, const YAML::Node &bonus_ranges) -> int;
+
+private:
 
     std::filesystem::path csvFilePath_;
     std::string yamlFilePath_;

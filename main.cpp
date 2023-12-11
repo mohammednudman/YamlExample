@@ -29,9 +29,8 @@ public:
         std::istringstream date_stream(joining_date_str);
         date_stream >> std::get_time(&joining_date, "%Y-%m-%d");
 
-        if (date_stream.fail()) {
+        if (date_stream.fail())
             throw std::runtime_error("Error: Failed to convert joining date.");
-        }
     }
 };
 
