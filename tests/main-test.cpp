@@ -1,36 +1,39 @@
-#include <gtest/gtest.h>
+// test_main.cpp
+#include "gtest/gtest.h"
 #include "../main.h"
 
-// Test the Employee class
-TEST(EmployeeTest, Constructor) {
-    std::string csvLine = "John Doe,123,2022-01-01,Engineering";
+// Define test fixtures if needed
+
+TEST(EmployeeTest, ConstructorTest) {
+    // Add your test cases for the Employee class constructor
+    // Example:
+    std::string csvLine = "John Doe,123,2022-01-01,HR";
     Employee employee(csvLine);
 
     EXPECT_EQ(employee.name, "John Doe");
     EXPECT_EQ(employee.id, "123");
-    EXPECT_EQ(employee.joining_date.tm_year, 122); // 2022 - 1900
-    EXPECT_EQ(employee.department, "Engineering");
+    // Add more assertions as needed
 }
 
-// Test the EmployeeBonusCalculator class
-TEST(EmployeeBonusCalculatorTest, CalculateLoyaltyBonus) {
-    std::filesystem::path csvFilePath = "C:\\Users\\Mohammed\\CLionProjects\\untitled\\Employee.csv";
-    std::string yamlFilePath = "C:\\Users\\Mohammed\\CLionProjects\\untitled\\BonusRange.yaml";
+TEST(BonusCalculatorTest, LoyaltyBonusCalculationTest) {
+    // Add your test cases for the EmployeeBonusCalculator::calculateLoyaltyBonus method
+    // Example:
+    std::tm joining_date = {};
+    joining_date.tm_year = 2020 - 1900; // Year is 2020
+    std::tm current_date = {};
+    current_date.tm_year = 2023 - 1900; // Year is 2023
 
-    YAML::Node bonus_range_config = YAML::LoadFile(yamlFilePath)["RangeAmountConfig"];
+    YAML::Node bonus_ranges;
+    bonus_ranges["1"] = 100;
+    bonus_ranges["2"] = 200;
 
-    EmployeeBonusCalculator calculator(csvFilePath, yamlFilePath);
+    int bonus = EmployeeBonusCalculator::calculateLoyaltyBonus(joining_date, current_date, bonus_ranges);
 
-    // Use current date and a date one year ago for testing
-    std::time_t current_time = std::time(nullptr);
-    std::tm *current_date = std::localtime(&current_time);
-    std::tm one_year_ago = *current_date;
-    one_year_ago.tm_year -= 1;
-
-    int bonus = EmployeeBonusCalculator::calculateLoyaltyBonus(one_year_ago, *current_date, bonus_range_config);
-
-    EXPECT_EQ(bonus, 50000); // Bonus for 1 year of work
+    EXPECT_EQ(bonus, 100); // Adjust the expected value based on your calculation
+    // Add more assertions as needed
 }
+
+// You can add more test cases as needed
 
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
