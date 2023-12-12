@@ -1,5 +1,6 @@
 C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/CMakeFiles/bonus_calculator.dir
 C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/CMakeFiles/test_main.dir
+C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/CMakeFiles/tests.dir
 C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/CMakeFiles/list_install_components.dir

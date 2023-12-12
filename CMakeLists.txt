@@ -15,12 +15,19 @@ include_directories(${CMAKE_SOURCE_DIR}/third-party/yaml-cpp/include)
 
 add_executable(
         bonus_calculator
+        employee_bonus.h
+        employee_bonus.cpp
         main.cpp
-        main.h
 )
 
-add_executable(test_main test_main.cpp)
-target_link_libraries(test_main gtest gtest_main gmock gmock_main)
+add_executable(
+        test_main
+        test_main.cpp
+        employee_bonus.cpp
+        employee_bonus.h
+)
+target_link_libraries(test_main PRIVATE yaml-cpp gtest gmock)
+target_include_directories(test_main PRIVATE ${CMAKE_SOURCE_DIR}/third-party/yaml-cpp/include)
 
 target_link_libraries(
         bonus_calculator
@@ -28,3 +35,4 @@ target_link_libraries(
         yaml-cpp
 )
 
+add_custom_target(tests COMMAND test_main)
