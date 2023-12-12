@@ -1,5 +1,5 @@
 # ninja log v5
-3	54	0	C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/CMakeFiles/cmake.verify_globs	845f210ebad9d832
+5	56	0	C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/CMakeFiles/cmake.verify_globs	845f210ebad9d832
 1711	4914	7240713609430500	third-party/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scanner.cpp.obj	d7b043817f8eb134
 98	1570	7240713575998276	third-party/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/exp.cpp.obj	94764fb2d01b26be
 1167	3685	7240713597118746	third-party/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.obj	eb7508f8109b349f
@@ -36,13 +36,14 @@
 2379	5019	7240713610485664	third-party/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.obj	feb589f0933e7c26
 5019	6233	7240713622627148	third-party/yaml-cpp/libyaml-cppd.a	4c03456bd8a9d57
 8	2616	7240717376347481	CMakeFiles/bonus_calculator.dir/main.cpp.obj	e2c243cef61cdd0d
-3543	7295	7240713633263471	CMakeFiles/bonus_calculator.dir/employee_bonus.cpp.obj	700470bfba60db23
-7295	11443	7240713651083860	bonus_calculator.exe	5784ff15455eb124
+7	3341	7240717680974007	CMakeFiles/bonus_calculator.dir/employee_bonus.cpp.obj	700470bfba60db23
+3342	7355	7240717698745912	bonus_calculator.exe	5784ff15455eb124
 15	3953	7240715164421617	CMakeFiles/test_main.dir/employee_bonus.cpp.obj	69fa2de7b640c9ea
 8	4481	7240715169716116	CMakeFiles/test_main.dir/test_main.cpp.obj	c1127ed7fc50ebd5
 28	6197	7240715186812415	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	c7953e658458332d
 16179	19606	7240715320977835	lib/libgtestd.a	e3983f4f10dbdcfd
-3	46	0	C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/CMakeFiles/cmake.verify_globs	845f210ebad9d832
-7	3341	7240717680974007	CMakeFiles/bonus_calculator.dir/employee_bonus.cpp.obj	700470bfba60db23
-3342	7355	7240717698745912	bonus_calculator.exe	5784ff15455eb124
-5	56	0	C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/CMakeFiles/cmake.verify_globs	845f210ebad9d832
+3	47	0	C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/CMakeFiles/cmake.verify_globs	845f210ebad9d832
+16	3628	7240727534510571	CMakeFiles/test_main.dir/employee_bonus.cpp.obj	386775a6a0600d59
+9	4322	7240727541450797	CMakeFiles/test_main.dir/test_main.cpp.obj	a41c97804b4e63a1
+4322	12845	7240727601291064	test_main.exe	77488f53ee16f25e
+3	45	0	C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/CMakeFiles/cmake.verify_globs	845f210ebad9d832

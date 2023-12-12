@@ -90,13 +90,13 @@ build bonus_calculator.exe: CXX_EXECUTABLE_LINKER__bonus_calculator_Debug CMakeF
 #############################################
 # Order-only phony target for test_main
 
-build cmake_object_order_depends_target_test_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest cmake_object_order_depends_target_yaml-cpp
+build cmake_object_order_depends_target_test_main: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_yaml-cpp
 
 build CMakeFiles/test_main.dir/test_main.cpp.obj: CXX_COMPILER__test_main_unscanned_Debug C$:/Users/Mohammed/CLionProjects/untitled/test_main.cpp || cmake_object_order_depends_target_test_main
   DEFINES = -DYAML_CPP_STATIC_DEFINE
   DEP_FILE = CMakeFiles\test_main.dir\test_main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Mohammed/CLionProjects/untitled/third-party/yaml-cpp/include -isystem C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/_deps/googletest-src/googletest -isystem C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/_deps/googletest-src/googlemock
+  INCLUDES = -IC:/Users/Mohammed/CLionProjects/untitled/third-party/yaml-cpp/include -isystem C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\test_main.dir
   OBJECT_FILE_DIR = CMakeFiles\test_main.dir
 
@@ -104,7 +104,7 @@ build CMakeFiles/test_main.dir/employee_bonus.cpp.obj: CXX_COMPILER__test_main_u
   DEFINES = -DYAML_CPP_STATIC_DEFINE
   DEP_FILE = CMakeFiles\test_main.dir\employee_bonus.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Mohammed/CLionProjects/untitled/third-party/yaml-cpp/include -isystem C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/_deps/googletest-src/googletest -isystem C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/_deps/googletest-src/googlemock
+  INCLUDES = -IC:/Users/Mohammed/CLionProjects/untitled/third-party/yaml-cpp/include -isystem C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/_deps/googletest-src/googletest
   OBJECT_DIR = CMakeFiles\test_main.dir
   OBJECT_FILE_DIR = CMakeFiles\test_main.dir
 
@@ -116,9 +116,9 @@ build CMakeFiles/test_main.dir/employee_bonus.cpp.obj: CXX_COMPILER__test_main_u
 #############################################
 # Link the executable test_main.exe
 
-build test_main.exe: CXX_EXECUTABLE_LINKER__test_main_Debug CMakeFiles/test_main.dir/test_main.cpp.obj CMakeFiles/test_main.dir/employee_bonus.cpp.obj | third-party/yaml-cpp/libyaml-cppd.a lib/libgtestd.a lib/libgmockd.a lib/libgtestd.a || lib/libgmockd.a lib/libgtestd.a third-party/yaml-cpp/libyaml-cppd.a
+build test_main.exe: CXX_EXECUTABLE_LINKER__test_main_Debug CMakeFiles/test_main.dir/test_main.cpp.obj CMakeFiles/test_main.dir/employee_bonus.cpp.obj | third-party/yaml-cpp/libyaml-cppd.a lib/libgtestd.a || lib/libgtestd.a third-party/yaml-cpp/libyaml-cppd.a
   FLAGS = -g
-  LINK_LIBRARIES = third-party/yaml-cpp/libyaml-cppd.a  lib/libgtestd.a  lib/libgmockd.a  lib/libgtestd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = third-party/yaml-cpp/libyaml-cppd.a  lib/libgtestd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\test_main.dir
   POST_BUILD = cmd.exe /C "cd /D C:\Users\Mohammed\CLionProjects\untitled\cmake-build-debug && "C:\Program Files\PowerShell\7\pwsh.exe" -noprofile -executionpolicy Bypass -file C:/Users/Mohammed/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/Mohammed/CLionProjects/untitled/cmake-build-debug/test_main.exe -installedDir C:/Users/Mohammed/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out"
   PRE_LINK = cd .
@@ -201,7 +201,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 #############################################
 # Custom command for CMakeFiles\tests
 
-build CMakeFiles/tests | ${cmake_ninja_workdir}CMakeFiles/tests: CUSTOM_COMMAND || lib/libgmockd.a lib/libgtestd.a test_main.exe third-party/yaml-cpp/libyaml-cppd.a
+build CMakeFiles/tests | ${cmake_ninja_workdir}CMakeFiles/tests: CUSTOM_COMMAND || lib/libgtestd.a test_main.exe third-party/yaml-cpp/libyaml-cppd.a
   COMMAND = cmd.exe /C "cd /D C:\Users\Mohammed\CLionProjects\untitled\cmake-build-debug && C:\Users\Mohammed\CLionProjects\untitled\cmake-build-debug\test_main.exe"
 
 # =============================================================================
